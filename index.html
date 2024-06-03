@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Játék Projekt</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .tartalom {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: black;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fejléc -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand ml-3 mr-5" href="#"><b>Elemek Harca</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kartyak">Kártyák</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#leiras">Leírás</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="text-center mt-5">Elemek Harca</h1>
+    <p class="text-center">Egy szórakoztató kártya játék.</p>
+    <hr class="mt-5" style="height: 0.5px; width: 50%; background-color: black;">
+
+    <!-- Tartalom -->
+    <div class="container tartalom">
+        <div id="kartyak" class="row">
+            <div class="col-12">
+                <h2>Kártyák</h2>
+            </div>
+            <!-- Bootstrap kártyák -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="kepek/foldkartya_1.png" class="card-img-top">
+                    <div class="card-body">
+                        <!-- <h5 class="card-title text-center">Föld elemkártya</h5> -->
+                        <p class="card-text text-center"><b>Ez egy elemkártya.</b> Egy pakliban 10 darab ilyen kártya
+                            van, az erőssége 1 és 10 között lehet. <i>(A képen láthatónak az erőssége 1-es.)</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Gomb</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="kepek/levegokartya_1.png" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text text-center"><b>Ez egy elemkártya.</b> Egy pakliban 10 darab ilyen kártya
+                            van, az erőssége 1 és 10 között lehet. <i>(A képen láthatónak az erőssége 1-es.)</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="kepek/tuzkartya_1.png" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text text-center"><b>Ez egy elemkártya.</b> Egy pakliban 10 darab ilyen kártya
+                            van, az erőssége 1 és 10 között lehet. <i>(A képen láthatónak az erőssége 1-es.)</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="kepek/vizkartya_1.png" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text text-center"><b>Ez egy elemkártya.</b> Egy pakliban 10 darab ilyen kártya
+                            van, az erőssége 1 és 10 között lehet. <i>(A képen láthatónak az erőssége 1-es.)</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="kepek/villamkartya.png" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text text-center"><b>Ez egy hatáskártya.</b> Egy pakliban 5 darab ilyen kártya
+                            van. Mindegyik hatáskártya egy elem erejét megváltoztatja.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="kepek/tornadokartya.png" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text text-center"><b>Ez egy hatáskártya.</b> Egy pakliban 5 darab ilyen kártya
+                            van. Mindegyik hatáskártya egy elem erejét megváltoztatja.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="kepek/zaporkartya.png" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text text-center"><b>Ez egy hatáskártya.</b> Egy pakliban 5 darab ilyen kártya
+                            van. Mindegyik hatáskártya egy elem erejét megváltoztatja.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="kepek/villamkartya.png" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text text-center"><b>Ez egy hatáskártya.</b> Egy pakliban 5 darab ilyen kártya
+                            van. Mindegyik hatáskártya egy elem erejét megváltoztatja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="leiras" class="row">
+            <div class="col-12">
+                <h2>Leírás</h2>
+                <p>A játékban az nyer, akinek marad kártya a kezében.</p>
+
+                <h4>Játékmenet</h4>
+                <ol>
+                    <li>Minden játékos kap 7 kártyát. A maradék kártyákat megkeverve lefelé fordítva az asztalra
+                        tesszük.</li>
+                    <li>Az elemkártyáknak megvan a saját erejük (1-10-es skálán), ergo minél erősebb egy kártya, annál
+                        nehezebb legyőzni, ezért érdemes hatáskártyákat tartogatni. Az elemek a következőképp vannak
+                        sorolva, hogy melyik melyiket győzi le: </li>
+
+                    <table class="table table-bordered mt-3">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Ezt a kártyát:</th>
+                                <th>Legyőzi ez a kártya:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>💨 Levegő</td>
+                                <td>🔥 Tűz</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>🔥 Tűz</td>
+                                <td>🌱 Föld</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>🌱 Föld</td>
+                                <td>🌊 Víz</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>🌊 Víz</td>
+                                <td>💨 Levegő</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="text-align">Ha ugyanazt az elemű kártyát akarod legyőzni a kártyáddal és nagyobb értéke
+                        van a kártyádnak, mint az asztalon lévőnek akkor annak semmi akadálya, viszont ha 5-nél kisebb
+                        értékű elem van lent és az legyőz téged viszont a te kártyád értéke 5-nél nagyobb ( 5 semleges)
+                        akkor te nyered a kört.
+                    </p>
+
+                    <li>A játékosok saját körükben cselekszenek. A körödben két lehetőséged van:</li>
+                    <p class="mb-0"><b>Elemkártya használata:</b> Tegyél le egy elemkártyát a középre. Ha ez az első
+                        elem ezen a körön, akkor ez lesz a "domináns elem". (ha egy kártya sincs az asztalon és a te
+                        körödben vagy, akkor 1 db elem kártyát le kell tenned, ha nem tudsz letenni mivel csak
+                        hatáskártyád van, akkor kiestél a játékból.</p>
+                    <p><b>Hatáskártya használata:</b> Tegyél le egy hatáskártyát a domináns elemre. A hatáskártya hatása
+                        érvényesül, majd eldobod.</p>
+
+                    <li><b>Ha egy játékos olyan elemkártyát tesz le, ami megegyezik a domináns elemmel</b>, akkor össze
+                        kell hasonlítani a kártyák erejét. Az erősebb kártya nyeri a kört, és a győztes játékos
+                        eldobhatja az ellenfele egy elemkártyáját, ezután a győztesnek kell letenni egy elemkártyát.
+                        <b>Ha a két kártya ereje megegyezik</b>, akkor egyik játékos sem nyer kártyát.</li>
+                    <li>Miután <b>egy játékos eldobta az ellenfele kártyáját</b>, új kártyát húz a pakliból a győztes.
+                    </li>
+                    <li>A kör addig folytatódik, amíg mindenkinek el nem fogynak a kártyái, és csak <b>1 játékos
+                            marad</b>.</li>
+                    <li><b>Ha nem tudsz semmilyen kártyát lerakni</b> akkor kiválaszthatod, hogy kimaradsz az adott
+                        körödből, ekkor 1 kártyát le kell tenned a kezedből, vissza a pakliba.</li>
+                    <li><b>Ha senki sem tud semmit letenni kártyát már</b>, akkor az adott illető megnyerte a játékot,
+                        vagy ha már csak 1 játékosnak vannak lapjai.</li>
+
+                </ol>
+
+                <p>Részletes leírás megtalálható dokumentumban <a
+                        href="https://docs.google.com/document/d/1kSaV7-Zot2XDNMjz-LykUy06-AS-xozl/"
+                        target="_blank">itt</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lábléc -->
+    <footer>
+        <p>Weboldalt megtervezte és elkészítette: Simon Barnabás</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
